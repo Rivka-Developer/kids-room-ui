@@ -1,0 +1,118 @@
+// מסד נתונים של המוצרים
+let products = [
+  {
+    id: 1,
+    name: "Storage bench",
+    des: "A stunning and practical storage bench for your children's room A storage bench that can be used both for storing toys, dolls, etc., and as a seating area. Made of birch wood, very strong and durable",
+    price: 250,
+    amount: 50,
+  },
+  {
+    id: 2,
+    name: "Half wall wallpaper",
+    des: "This wallpaper is an excellent choice for children's rooms, providing a sense of calm, and harmoniously integrating with furniture and accessories in a Nordic design. The wallpaper is made of durable and high-quality material",
+    price: 50,
+    amount: 10,
+  },
+  {
+    id: 3,
+    name: "Flower wall stickers",
+    des: "Bring softness and naturalness to your child's room with our minimalist flower stickers, in pleasant brown and beige tones, that will bring peace and tranquility to the room. The stickers are made of high-quality vinyl, can be easily applied and removed",
+    price: 87,
+    amount: 98,
+  },
+  {
+    id: 4,
+    name: "rocking horse",
+    des: "Modular rocking horse, perfect for the nursery! Choose the module that best suits you. The unit consists of pine wood poles and a minimalist metal shelf.",
+    price: 95,
+    amount: 2,
+  },
+  {
+    id: 5,
+    name: "BOX KIDS shelf",
+    des: "A metal shelf, designed with rounded lines. Can be used for small storage above the desk or next to the bed.",
+    price: 60,
+    amount: 2,
+  },
+  {
+    id: 6,
+    name: "Terrazzo wall stickers",
+    des: "Minimalist wall stickers that will add a perfect design touch to your children's rooms With our wall stickers you can easily, quickly and simply upgrade your children's room. High-quality PVC stickers that are easy to apply and remove.",
+    price: 87,
+    amount: 4,
+  },
+  {
+    id: 7,
+    name: "African-style hammock",
+    des: "An African-style hammock with a variety of pleasant colors that will add a lot of style to children's rooms. For an easy, quick and simple upgrade to the design of the children's room.",
+    price: 500,
+    amount: 10,
+  },
+  {
+    id: 8,
+    name: "Rainbow wall stickers",
+    des: "Wall stickers with simple, clean shapes and a variety of pleasant colors that will add a lot of style to children's rooms. For an easy, quick and simple upgrade of the children's room design High-quality PVC stickers are easy to apply and remove.",
+    price: 110,
+    amount: 10,
+  },
+  {
+    id: 9,
+    name: "ARC shelving unit",
+    des: "Modular shelving unit, perfect for the children's room! Choose the module that best suits you. The unit consists of pine wood rods and a minimalist metal shelf.",
+    price: 320,
+    amount: 10,
+  },
+  {
+    id: 10,
+    name: "Pebble wall stickers",
+    des: "Wall stickers with simple, clean shapes and a variety of pleasant colors that will add a lot of style to children's rooms. For an easy, quick and simple upgrade of the children's room design, high-quality PVC stickers are easy to apply and remove.",
+    price: 87,
+    amount: 10,
+  },
+  {
+    id: 11,
+    name: "Space wall stickers",
+    des: "Wall stickers that will add life and color to any children's room! For an easy, quick and simple upgrade to the design of the children's room, high-quality PVC stickers are easy to apply and remove.",
+    price: 56,
+    amount: 10,
+  },
+  {
+    id: 12,
+    name: " Half Wall Wallpaper",
+    des: "Update your children's rooms with elegant and beautiful PASIM wallpaper, which adds a calm and unique Nordic style to any wall! This wallpaper is especially suitable for children's rooms, creating a sense of calm and security and blends perfectly with Nordic-style furniture and accessories. ",
+    price: 70,
+    amount: 10,
+  },
+  {
+    id: 13,
+    name: "Leaf wall stickers",
+    des: "The most beautiful color of the year is that of fall... Bring this color into your children's room with our wall stickers for the relaxing and pleasant atmosphere of the fall season - all year round. With our wall stickers you can quickly and easily upgrade your children's room. ",
+    price: 35,
+    amount: 10,
+  },
+  {
+    id: 14,
+    name: "Leviathan night lamp",
+    des: "A nightlight that creates a pleasant, caressing light in the room. The Leviathan lamp will bring the magical sea atmosphere right into your child's room and comes with an LED lighting mechanism that connects to electricity with a dimmer to control the light intensity. ",
+    price: 55,
+    amount: 10,
+  },
+  {
+    id: 15,
+    name: "Pictures",
+    des: "The By the Beach photo set brings the magic of the sea to the children's room with charming Nordic designs. The set includes three posters that add color and a sense of calm to the space: encouraging to follow dreams and focus on achieving goals with design elements from the beach, including shells ",
+    price: 100,
+    amount: 10,
+  },
+  {
+    id: 16,
+    name: " Half Wall Wallpaper",
+    des: "Update your children's rooms with elegant and beautiful PASIM wallpaper, which adds a calm and unique Nordic style to any wall! This wallpaper is especially suitable for children's rooms, creating a sense of calm and security and blends perfectly with Nordic-style furniture and accessories.  ",
+    price: 100,
+    amount: 10,
+  },
+];
+function saveProducts() {
+  localStorage.setItem("products", JSON.stringify(products));
+}

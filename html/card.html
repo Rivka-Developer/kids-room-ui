@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/card.css" />
+    <link rel="icon" href="../p/logo.png" />
+    <title>creditCard</title>
+  </head>
+  <body>
+    <!-- הכרטיס אשראי -->
+    <div class="card">
+      <div class="logo">VISA</div>
+      <!-- השבב -->
+      <div class="chip">
+        <svg
+          viewBox="0 0 50 40"
+          width="50"
+          height="40"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs>
+            <linearGradient
+              id="metalGradient"
+              x1="0%"
+              y1="0%"
+              x2="100%"
+              y2="100%"
+            >
+              <stop offset="0%" stop-color="#92879b" />
+              <stop offset="100%" stop-color="#92879b" />
+            </linearGradient>
+          </defs>
+          <rect
+            x="0"
+            y="0"
+            rx="6"
+            ry="6"
+            width="50"
+            height="40"
+            fill="url(#metalGradient)"
+            stroke="#fff"
+            stroke-width="1"
+          />
+          <rect
+            x="10"
+            y="8"
+            width="30"
+            height="24"
+            rx="2"
+            fill="none"
+            stroke="#fff"
+            stroke-width="0.8"
+          />
+          <path
+            d="M15 8 V32 M25 8 V32 M35 8 V32"
+            stroke="#fff"
+            stroke-width="0.8"
+          />
+          <path d="M10 20 H40" stroke="#fff" stroke-width="0.8" />
+        </svg>
+      </div>
+
+      <div class="number-field">
+        <div class="block">
+          <span><input maxlength="1" inputmode="numeric" pattern="\d*" /></span>
+          <span><input maxlength="1" inputmode="numeric" pattern="\d*" /></span>
+          <span><input maxlength="1" inputmode="numeric" pattern="\d*" /></span>
+          <span><input maxlength="1" inputmode="numeric" pattern="\d*" /></span>
+        </div>
+        <div class="block">
+          <span><input maxlength="1" inputmode="numeric" pattern="\d*" /></span>
+          <span><input maxlength="1" inputmode="numeric" pattern="\d*" /></span>
+          <span><input maxlength="1" inputmode="numeric" pattern="\d*" /></span>
+          <span><input maxlength="1" inputmode="numeric" pattern="\d*" /></span>
+        </div>
+        <div class="block">
+          <span><input maxlength="1" inputmode="numeric" pattern="\d*" /></span>
+          <span><input maxlength="1" inputmode="numeric" pattern="\d*" /></span>
+          <span><input maxlength="1" inputmode="numeric" pattern="\d*" /></span>
+          <span><input maxlength="1" inputmode="numeric" pattern="\d*" /></span>
+        </div>
+        <div class="block">
+          <span><input maxlength="1" inputmode="numeric" pattern="\d*" /></span>
+          <span><input maxlength="1" inputmode="numeric" pattern="\d*" /></span>
+          <span><input maxlength="1" inputmode="numeric" pattern="\d*" /></span>
+          <span><input maxlength="1" inputmode="numeric" pattern="\d*" /></span>
+        </div>
+      </div>
+
+      <div class="valid-thru-label">VALID THRU</div>
+      <div class="expiry">
+        <div class="expiry-fields">
+          <input
+            type="text"
+            maxlength="2"
+            placeholder="MM"
+            inputmode="numeric"
+            pattern="\d*"
+          />
+          <span>/</span>
+          <input
+            type="text"
+            maxlength="2"
+            placeholder="YY"
+            inputmode="numeric"
+            pattern="\d*"
+          />
+        </div>
+      </div>
+
+      <div class="name-field">
+        <input type="text" placeholder="FULL NAME" />
+        <input
+          type="text"
+          placeholder="CVV"
+          maxlength="3"
+          inputmode="numeric"
+          pattern="\d*"
+        />
+      </div>
+    </div>
+    <!-- כפתור תשלום -->
+    <div class="button" id="btn" onclick="finish(),delateCart()">
+      <span><i class="material-icons">For payment</i></span>
+      <span class="left">For payment</span>
+    </div>
+
+    <script src="../js/card.js"></script>
+  </body>
+</html>

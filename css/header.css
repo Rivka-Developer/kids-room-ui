@@ -1,0 +1,97 @@
+/* עיצוב התפריט */
+header {
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  padding: 25px 7%;
+  padding-bottom: 7px;
+}
+nav {
+  justify-content: flex-start;
+  margin-left: 75px;
+}
+/* עיצוב השלום */
+.hello {
+  margin-left: 200px;
+  text-align: end;
+  font-size: 20px;
+  font-style: normal;
+}
+
+li,
+header a {
+  list-style: none;
+  text-decoration: none;
+  color: #d5d5d4;
+  font-size: 22px;
+  /* padding: 25px; */
+}
+
+.nav__links li {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.nav__links li a:hover {
+  color: #a196aa;
+  text-decoration: none;
+}
+.head {
+  height: 29px;
+  background-color: #edebeb;
+  margin-top: 5px;
+}
+#active {
+  color: #92879b;
+}
+#f {
+  display: flex;
+}
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+} */
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;} 
+
+/* עיצוב כיתוב זז */
+
+.container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee-content {
+  display: inline-flex;
+gap: 30px;
+  white-space: nowrap;
+  font-size: small;
+  animation: marquee 20s linear infinite;
+  color: #887597;
+}
+.marquee-content img {
+  height: 100px;
+  margin-right: 20px;
+  vertical-align: middle;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

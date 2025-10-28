@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+    <link rel="stylesheet" href="../css/loginEnter.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="icon" href="../p/logo.png" />
+  </head>
+
+  <body>
+    <!-- תפריט -->
+    <header>
+      <img src="../p/logo.png" height="50px" />
+      <nav>
+        <ul class="nav__links">
+          <li><a id="active" href="./login.html">login</a></li>
+          <li><a href="./enter.html">enter</a></li>
+          <li><a href="./index.html">home</a></li>
+          <li><a href="./shop.html">shop</a></li>
+          <li><a href="./ShoppingCart.html">ShoppingCart</a></li>
+          <li><a href="./personalSetting.html">personalSetting</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- הרשמה -->
+    <div class="head"></div>
+    <div class="split-form">
+      <div class="image-side">
+        <h2>Welcome Back!</h2>
+        <p>Enter your details to register.</p>
+      </div>
+      <div class="form-side">
+        <h2>Sign Up</h2>
+        <form>
+          <input
+            type="text"
+            placeholder="name"
+            required
+            onkeypress="checkName()"
+            onblur="focuss()"
+          />
+          <span hidden>*only English</span>
+          <input type="email" placeholder="Email" required onblur="focuss() " />
+          <input
+            type="password"
+            placeholder="Password"
+            required
+            onkeypress="checkPassword()"
+            onblur="focuss() "
+          />
+          <span hidden>*Only digits</span>
+          <button type="submit" onclick=" isFull()">Login</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="../js/login.js"></script>
+  </body>
+</html>
